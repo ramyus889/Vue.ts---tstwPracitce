@@ -1,4 +1,8 @@
 @import 'tailwindcss';
+@import './tailwind.css';
+button {
+  cursor: pointer;
+}
 
 :root {
   --vt-c-white: #ffffff;

@@ -5,6 +5,9 @@ import { createPinia } from 'pinia';
 import { createApp } from 'vue';
 import App from './App.vue';
 
+import Toast from 'vue-toastification';
+import 'vue-toastification/dist/index.css';
+
 import { createRouter, createWebHistory } from 'vue-router';
 import { routes } from './router/routes.ts';
 
@@ -17,6 +20,9 @@ const router = createRouter({
   routes
 });
 
+const options = {};
+
+app.use(Toast, options);
 app.use(MotionPlugin);
 app.use(router);
 app.use(pinia);
